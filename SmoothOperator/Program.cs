@@ -13,12 +13,24 @@ namespace SmoothOperator
             {
                 byte n = (byte)number;
 
-                Console.WriteLine($"Resultado da operação de decremento de {n}: {--n}");
-                Console.WriteLine($"Resultado da operação de incremento de {n}: {++n}");
+                Console.WriteLine($"{--n}");
+                Console.WriteLine($"{++n}");
+                Console.WriteLine($"{n / 2}");
+                Console.WriteLine($"{n << 3}");
+                Console.WriteLine($"{n ^ 5}");
+                if(n > 10);
+                {
+                    Console.WriteLine("True");
+
+                }
+                else;
+                {
+                    Console.WriteLine("False");
+                }
             }
             else
             {
-                Console.WriteLine("Número inválido. Certifique-se de digitar um número inteiro não-negativo dentro do intervalo permitido para um byte (0 a 255).");
+                Console.WriteLine("Número inválido.");
             }
         }
     }
