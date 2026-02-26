@@ -13,9 +13,9 @@ namespace TempConvert
         /// <param name="args"></param>
         private static void Main(string[] args)
         {
-            Console.WriteLine("Insira o vlaor da temperatura: ");
+            Console.WriteLine("Temperature: ");
             float t = Console.ReadLine();
-            Console.WriteLine("Insira a unidade de origem: ");
+            Console.WriteLine("Unit: ");
             string u = Console.ReadLine();
             float n;
         }
@@ -24,10 +24,14 @@ namespace TempConvert
             if (u == F)
         {
                 n = t * 1.8 + 32;
+                Console.WriteLine(u "F = " n "C");
+                Console.WriteLine("Absolute value: " n);
         }
             else
         {
                 n = (t - 32) / 1.8;
+                Console.WriteLine(u "C = " n "F");
+                Console.WriteLine("Absolute value: " n);
         }
         }
     }
